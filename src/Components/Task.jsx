@@ -22,7 +22,7 @@ const handleSubmit=(e)=>{
 
 
     return(
-    <form onSubmit={handleSubmit} className='flex items-center justify-center gap-28'>
+    <form onSubmit={handleSubmit} className='flex items-center justify-center gap-28 flex-col gap-4 sm:flex-row'>
         <input type='text' placeholder='Enter Task' value={text} onChange={(e)=>setText(e.target.value)} className='border p-2 rounded' />
         <input type='datetime-local' value={time} onChange={(e)=>{setTime(e.target.value)}} className='border p-2 rounded'/>
         <button type='submit' className='text-white px-4 py-2 rounded bg-blue-500' >Add Task</button>
